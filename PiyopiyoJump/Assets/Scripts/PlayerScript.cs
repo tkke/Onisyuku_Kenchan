@@ -6,12 +6,6 @@ public class PlayerScript : MonoBehaviour
 {
     int score = 0;
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -20,7 +14,7 @@ public class PlayerScript : MonoBehaviour
             GetComponent<Rigidbody>().velocity = new Vector3(0, 6, 0);
             GetComponent<AudioSource>().Play();
         }
-            
+
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -7,11 +7,6 @@ public class WallCreateScript : MonoBehaviour
     public GameObject wall;
     float timer = 0;
     int interval = 3;
-    // Use this for initialization
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
