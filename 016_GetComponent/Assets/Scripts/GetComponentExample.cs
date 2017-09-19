@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GetComponentExample : MonoBehaviour {
+public class GetComponentExample : MonoBehaviour
+{
     private Rigidbody _rigidbody;
     private GameObject _parent;
     private GameObject _child;
@@ -15,14 +16,10 @@ public class GetComponentExample : MonoBehaviour {
         _child = this.transform.Find("Child").gameObject;
     }
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         this.transform.position = new Vector3(0f, 5f, 0f);
         _renderer = GetComponent<Renderer>();
         _renderer.enabled = false;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    }
 }

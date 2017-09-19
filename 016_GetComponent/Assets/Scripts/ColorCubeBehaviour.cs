@@ -11,11 +11,6 @@ public class ColorCubeBehaviour : MonoBehaviour
     {
         _randomColor = GetComponent<RamdomColor>();
     }
-    // Use this for initialization
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -25,10 +20,10 @@ public class ColorCubeBehaviour : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-            Renderer renderer = collision.gameObject.GetComponent<Renderer>();
-            renderer.material.color = _randomColor.GetBodyColor();
-            _randomColor.ChangeColor();
-            _time = 0;
+        Renderer renderer = collision.gameObject.GetComponent<Renderer>();
+        renderer.material.color = _randomColor.GetBodyColor();
+        _randomColor.ChangeColor();
+        _time = 0;
 
     }
 

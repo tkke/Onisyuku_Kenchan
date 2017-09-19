@@ -12,18 +12,6 @@ public class RamdomColor : MonoBehaviour
         _targetRenderer.material.color = new Color(Random.value, Random.value, Random.value, 1.0f);
     }
 
-    // Use this for initialization
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public Color GetBodyColor()
     {
         return _targetRenderer.material.color;

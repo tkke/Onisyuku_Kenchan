@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
     public float speed = 10f;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    void Update()
+    {
         transform.position += new Vector3(0, 0, speed * Time.deltaTime);
         if (Input.GetKey(KeyCode.RightArrow))
             transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
@@ -24,5 +21,5 @@ public class PlayerController : MonoBehaviour {
 
         if (transform.position.z >= 150)
             SceneManager.LoadScene("Goal");
-	}
+    }
 }
